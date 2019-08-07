@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio3</title>
+</head>
+<style>
+
+    .cielo {
+        height: 500px;
+        width: 100%;
+        background-color: lightblue;
+    }
+
+    .sun  {
+        padding-top: 30px;
+        margin-left: 200px;
+        animation-name: entrada1;
+        animation-duration: 3s;
+    }
+
+    .texto {
+        margin-left: 100px;
+        font-family:Verdana;
+        color: white;
+        animation-name: entrada2;
+        animation-duration: 5s;
+    }
+
+    .arena {
+        height: 200px;
+        width: 100%;
+        background-color: rgb(199, 202, 153);
+        position: relative;
+    }
+
+    .people {
+        align-self: flex-end;
+        opacity: 1;
+        animation-name: entrada1;
+        animation-duration: 5s;
+        right: 250px;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .palm {
+        position: absolute;
+        left: 600px;
+        top: -60px;
+        animation-name: entrada5;
+        animation-duration: 2s;
+    }
+
+    .ball {
+        position: absolute;
+        right: 200px;
+        top: -200px;
+        animation-name:entrada4;
+        animation-duration: 1s;
+        
+    }
+
+    .umbrella {
+        position: absolute;
+        bottom: 90px;
+        left: 20px;
+        animation-name:entrada3;
+        animation-duration: 1s;
+    }
+    @keyframes entrada1 {
+            from {
+            opacity:0; 
+            }
+            to {
+            opacity:1
+            }
+        }
+        @keyframes entrada2 {
+            from {
+            opacity:0; 
+            }
+            to {
+            opacity:1
+            }
+        }
+        @keyframes entrada3 {
+            from {
+                left:-300px
+            }
+            to {
+                left:0
+            }
+        }
+        @keyframes entrada4 {
+            from {
+                right: 10px
+            }
+            to {
+                right:50px;
+            }
+        }
+        @keyframes entrada5{
+            from {
+            opacity:0; 
+            }
+            to {
+            opacity:1
+            }
+        }
+</style>
+
+<body>
+    <div class="container">
+        <div class="cielo">
+            <div class="sun">
+                <img src="ejercicio-3_sun.svg" alt="">
+                <div class="texto">
+                    <h1>Vive el Verano</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arena">
+            <div class="people">
+                <img src="ejercicio-3_people.svg" alt="">
+            </div>
+            <div class="ball">
+                <img src="ejercicio-3_beach-ball.svg" alt="">
+            </div>
+            <div class="palm">
+                <img src="ejercicio-3_palm-tree.svg" alt="">
+            </div>
+            <div class="umbrella">
+                    <img src="ejercicio-3_sun-umbrella.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
